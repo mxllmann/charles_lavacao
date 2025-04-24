@@ -1,4 +1,4 @@
-import { Stack, Link, Typography } from "@mui/material";
+import { Stack, Link, Typography, Box } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { footer, footer_link, footer_p } from "../_style/style.js";
@@ -12,9 +12,12 @@ export default function Footer() {
       justifyContent="center"
       alignItems="center"
       sx={footer}
-      spacing={3}
+      spacing={4}
     >
-      <Typography sx={footer_p}>Desenvolvido por Arthur Mallmann.</Typography>
+      <Stack>
+      <Typography sx={footer_p}>Desenvolvido por</Typography>
+      <Typography sx={footer_p}>Arthur Mallmann</Typography>
+      </Stack>
       <Link 
         color="#000000" 
         href="https://github.com/mxllmann" 
@@ -35,6 +38,6 @@ export default function Footer() {
         <LinkedInIcon sx={{ mr: 0.5 }} fontSize="small"/>
         {"LinkedIn"}
       </Link>
-    </Stack>
+      </Stack>
   );
 }
