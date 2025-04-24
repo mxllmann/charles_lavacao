@@ -1,4 +1,4 @@
-// Função para rolagem suave da página
+// Função para rolagem suave da páginq
 
 export default function smoothScrollTo(targetY, duration = 1000) {
     const startY = window.scrollY;

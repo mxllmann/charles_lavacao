@@ -1,10 +1,14 @@
+"use client";
+
 import { main_content_text_p } from "../_style/style";
 import dynamic from "next/dynamic";
 import { Typography, Box } from "@mui/material";
 import { main_content_text_h2, main_content_text_p_2 } from "../_style/style";
-const ServiceSlider = dynamic(() => import("../_components/Carousel"), {
+const ServiceSlider = dynamic(() => import("../_components/Carrossel"), {
   ssr: false,
 });
+
+//Conteúdo da página de contato
 
 export default function Contact() {
   return (

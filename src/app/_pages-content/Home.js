@@ -11,9 +11,11 @@ import {
   main_content_text_p_2,
   imageStyle,
 } from "../_style/style";
-const ServiceSlider = dynamic(() => import("../_components/Carousel"), {
+const ServiceSlider = dynamic(() => import("../_components/Carrossel"), {
   ssr: false,
 });
+
+//Conteúdo da página de Home
 
 export default function Home() {
   return (

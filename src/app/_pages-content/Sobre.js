@@ -8,9 +8,11 @@ import {
   main_content_text_p_2,
 } from "../_style/style";
 import dynamic from "next/dynamic";
-const ServiceSlider = dynamic(() => import("../_components/Carousel"), {
+const ServiceSlider = dynamic(() => import("../_components/Carrossel"), {
   ssr: false,
 });
+
+//Conteúdo da página de sobre
 
 export default function Sobre() {
   return (

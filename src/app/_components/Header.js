@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 export default function Header() {
   const router = useRouter();
 
+  //Verifica se o dispositivo é mobile
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -21,22 +22,7 @@ export default function Header() {
       direction="row"
       justifyContent="flex-start"
       alignItems="center"
-      sx={{
-        ...header,
-        gap: "6.5rem", // valor padrão para telas grandes
-        "@media (max-width: 350px)": {
-          gap: "2rem", // telas com até 600px
-        },
-        "@media (min-width: 351px) and (max-width: 400px)": {
-          gap: "4rem", // telas com até 600px
-        },
-        "@media (min-width: 401px) and (max-width: 500px)": {
-          gap: "6rem", // entre 601px e 960px
-        },
-        "@media (min-width: 501px) and (max-width: 1000px)": {
-          gap: "27rem",
-        },
-      }}
+      sx={header}
     >
       <Image
         height={98}
@@ -48,6 +34,8 @@ export default function Header() {
         onClick={() => router.push("/")}
       />
       {isMobile ? <MobileMenu /> : <DesktopMenu />}
+      {/* Se for mobile, ele carrega o menu para dispositivos mobile, se não, é renderizado
+      o menu para dispositivos maiores */}
     </Stack>
   );
 }

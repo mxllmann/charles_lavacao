@@ -5,9 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import style from "../_style/carousel.css"; //Tive de usar CSS pois o Swiper não aceita CSS-in-JS
-
-import { Autoplay, Pagination, Navigation } from "swiper/modules"; // <-- ATUAL!
+import style from "../_style/carrossel.css"; //Tive de usar CSS pois o Swiper não aceita CSS-in-JS
+import { Autoplay, Pagination, Navigation } from "swiper/modules"; 
 
 const Carousel = () => {
   const router = useRouter();
@@ -25,6 +24,9 @@ const Carousel = () => {
           dynamicBullets: true,
         }}
       >
+        {/* No clique de alguma foto, ele cria o item "scrollTarget" do localStorage e armazena o conteúdo, 
+        manda o usuário para a página de serviços e na página de serviços é feita a lógica
+        para a rolagem suave até a seção de conteúdo*/}
         <SwiperSlide>
           <img
             src="/assets/lavacao.jpg"

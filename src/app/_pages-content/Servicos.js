@@ -11,13 +11,20 @@ import {
 } from "../_style/style";
 import smoothScrollTo from "../_utils/smoothScrollTo";
 
+//Conteúdo da página de Serviços
+
 export default function Servicos() {
+
+  //Ao carregar da página, ele verifica se há o item "scrollTarget" no localStorage 
   useEffect(() => {
     const scrollTarget = localStorage.getItem("scrollTarget");
 
     if (scrollTarget) {
       const element = document.getElementById(scrollTarget);
+    //Se há o item localStorahge, ele armazena a seção de conteúdo em que o id é igual ao conteúdo do localStorage 
 
+
+      //Se ele tiver armazenado, executa a função de rolagem suave até a seção e apaga o conteúdo do localStorage
       if (element) {
         const headerOffset = 150;
         const elementY =
@@ -25,10 +32,10 @@ export default function Servicos() {
           window.pageYOffset -
           headerOffset;
 
-        // Faz o scroll depois de um leve delay (para garantir que tudo carregou)
+      
         setTimeout(() => {
           smoothScrollTo(elementY, 500);
-        }, 1); // 100ms de atraso ajuda a suavizar
+        }, 1);
 
         localStorage.removeItem("scrollTarget");
       }

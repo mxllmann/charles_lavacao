@@ -19,6 +19,8 @@ import InfoIcon from "@mui/icons-material/Info";
 
 export default function MobileMenu() {
 
+
+    //Lógica de abertura e fechamento do menu
     const [anchorEl, setAnchorEl] = useState(null);
 
     const handleOpenMenu = (event) => {

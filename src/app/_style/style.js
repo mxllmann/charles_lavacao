@@ -1,3 +1,23 @@
+//CSS-in-JS, cada componente estilizado é um objeto
+
+
+export const globalStylesDefinition = {
+  '*': {
+    boxSizing: 'border-box',
+    padding: 0,
+    margin: 0,
+  }}
+
+export const body = {
+  color: " #171717", 
+  background: "#4dcee8",
+  maxWidth: "100vw",
+  overflowX: "hidden",
+  scrollBehavior: "smooth",
+  fontFamily: "Arial, Helvetica, sans-serif",
+  WebkitFontSmoothing: "antialiased", /*Usados para suavizar a renderização de fontes */
+  MozOsxFontSmoothing: "grayscale"
+}
 
 export const header = {
   backgroundColor: "#fdfdfd",
@@ -10,7 +30,34 @@ export const header = {
   top: "0",
   zIndex: 1000,
   position: "fixed",
-  boxShadow: "0 6px 10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1)"
+  boxShadow: "0 6px 10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1)",
+  gap: "6.5rem",
+  "@media (max-width: 350px)": { //Em alguns telefones, o menu ficava ou muito distante (ficando para fora da tela) 
+          gap: "2rem",          //ou muito próximo da logo, então, criei alguns medias querys para controlar melhor
+        },                     //esse espaçamento para dispositivos menores.      
+        "@media (min-width: 351px) and (max-width: 400px)": {
+          gap: "4rem", 
+        },
+        "@media (min-width: 401px) and (max-width: 500px)": {
+          gap: "6rem", 
+        },
+        "@media (min-width: 501px) and (max-width: 1000px)": {
+          gap: "27rem",
+        },
+};
+
+export const linkStyle = {
+  display: "flex", 
+  alignItems: "center", 
+  textDecoration: "none", 
+  padding: "0.5rem 1rem",
+  borderRadius: "8px",
+  color: "#000000",
+  transition: "all 0.3s ease",
+  "&:hover": {
+    backgroundColor: "rgba(0, 0, 0, 0.04)",
+    transform: "scale(1.05)"
+  }
 };
 
 export const container_main = {
@@ -156,6 +203,8 @@ export const whatsapp_button = {
   },
 };
 
+
+//Configuração da animação do botão do WhatsApp
 export const pulseBounceKeyframes = `
 @keyframes pulse-bounce {
   0%, 100% {

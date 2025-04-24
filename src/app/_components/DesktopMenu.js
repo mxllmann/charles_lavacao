@@ -7,22 +7,11 @@ import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import WaterDropIcon from "@mui/icons-material/WaterDrop";
 import MessageIcon from "@mui/icons-material/Message";
 import InfoIcon from "@mui/icons-material/Info";
+import { linkStyle } from '../_style/style'
+
+//Componente do Menu para desktops e dispositivos maiores
 
 export default function DesktopMenu() { 
-
-    const linkStyle = {
-        display: "flex", 
-        alignItems: "center", 
-        textDecoration: "none", 
-        padding: "0.5rem 1rem",
-        borderRadius: "8px",
-        color: "#000000",
-        transition: "all 0.3s ease",
-        "&:hover": {
-          backgroundColor: "rgba(0, 0, 0, 0.04)",
-          transform: "scale(1.05)"
-        }
-      };
 
     return (
     <Stack direction="row" spacing={3} alignItems="center">
