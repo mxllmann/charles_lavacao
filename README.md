@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Charles Washing é uma aplicação web desenvolvida para um amigo pessoal que possui um negócio de lava rápido. A aplicação serve como uma plataforma digital para mostrar os diversos serviços de lavagem de carros oferecidos, atrair potenciais clientes e fornecer uma maneira fácil para os clientes entrarem em contato para consultas e agendamentos. Construído com tecnologias web modernas, o site garante uma experiência amigável com design responsivo e navegação suave.
+Charles Lavação Automotiva é uma aplicação web desenvolvida para um amigo pessoal que possui um negócio de lava rápido. A aplicação serve como uma plataforma digital para mostrar os diversos serviços de lavagem de carros oferecidos, atrair potenciais clientes e fornecer uma maneira fácil para os clientes entrarem em contato para consultas e agendamentos. Construído com tecnologias web modernas, o site garante uma experiência amigável com design responsivo e navegação suave.
 
 ## Funcionalidades
 
