@@ -232,7 +232,7 @@ export const footer = {
 };
 
 export const footer_p = {
-  fontSize: "0.7rem"
+  fontSize: "0.8rem"
 }
 
 export const footer_link = {
