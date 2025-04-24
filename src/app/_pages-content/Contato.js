@@ -22,7 +22,7 @@ export default function Contact() {
         no botão do WhatsApp no canto inferior direito da tela!
       </Typography>
       <Typography variant="h2" sx={main_content_text_h2}>
-        Nosso Serviços
+        Nossos Serviços
       </Typography>
       <Typography sx={main_content_text_p_2}>
         Clique nas fotos para ver os serviços disponíveis!
