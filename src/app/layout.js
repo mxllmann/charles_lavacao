@@ -1,6 +1,7 @@
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Head from 'next/head';
-import { globalStylesDefinition, content} from "./_style/style"
+import {Box} from "@mui/material";
+import { globalStylesDefinition, mainWrapper } from "./_style/style"
 import Header from "./_components/Header";
 import WhatsAppButton from "./_components/WhatsAppButton";
 import Footer from "./_components/Footer";
@@ -19,14 +20,16 @@ export default function RootLayout({ children }) {
       {/* Arquivo de configuração para "adicionar a tela de início" em dispositivos mobile */}
       <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
       <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="theme-color" content="#FFA500" />
     </Head>
       <GlobalStyles styles={globalStylesDefinition} /> 
       {/* Componente do Material UI para que eu possa aplicar estilos globais */}
       <body>
         <Header />
+        <Box component="main" sx={mainWrapper}> 
         {children}
         <WhatsAppButton />
+        </Box>
         <Footer />
       </body>
     </html>

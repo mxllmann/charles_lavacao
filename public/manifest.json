@@ -4,7 +4,7 @@
     "start_url": "/",
     "display": "browser",
     "background_color": "#ffffff",
-    "theme_color": "#ffffff",
+    "theme_color": "##FFA500",
     "description": "Página web da Charles Lavação, facilitando o acesso aos serviços de lavagem automotiva.",
     "icons": [
       {

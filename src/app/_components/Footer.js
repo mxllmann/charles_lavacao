@@ -1,5 +1,5 @@
 
-import { Stack, Link, Typography, Box } from "@mui/material";
+import { Stack, Link, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { footer, footer_link, footer_p } from "../_style/style.js";

@@ -1,29 +1,31 @@
 //CSS-in-JS, cada componente estilizado é um objeto
 
-import { BorderColor, BorderStyle } from "@mui/icons-material";
-
 export const globalStylesDefinition = {
-  '*': {
-    boxSizing: 'border-box',
+  "*": {
+    boxSizing: "border-box",
     padding: 0,
     margin: 0,
   },
   html: {
-    backgroundColor: "orange", 
-    height: "100%",
-    overflow: "visible", 
+    overflow: "visible",
+    backgroundColor: "orange",
   },
   body: {
-    backgroundColor: "#4dcee8", 
-    minHeight: "100vh",         
-    height: "auto",             
+    minHeight: "100vh",
+    height: "auto",
     color: "#171717",
     fontFamily: "Arial, Helvetica, sans-serif",
     scrollBehavior: "smooth",
     overflowX: "hidden",
     WebkitFontSmoothing: "antialiased",
     MozOsxFontSmoothing: "grayscale",
-  }
+  },
+};
+
+export const mainWrapper = {  //Tive que criar um box que abraçasse todo o conteúdo e tivesse cor de fundo azul, para que em um overflow
+  backgroundColor: '#4dcee8', //do scroll para baixo, a cor fosse laranja e o fundo conteúdo permanecesse azul,    
+  minHeight: '100vh', 
+  paddingBottom: '7vh',         
 };
 
 export const header = {
@@ -39,32 +41,33 @@ export const header = {
   position: "fixed",
   boxShadow: "0 6px 10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1)",
   gap: "6.5rem",
-  "@media (max-width: 350px)": { //Em alguns telefones, o menu ficava ou muito distante (ficando para fora da tela) 
-          gap: "2rem",          //ou muito próximo da logo, então, criei alguns medias querys para controlar melhor
-        },                     //esse espaçamento para dispositivos menores.      
-        "@media (min-width: 351px) and (max-width: 400px)": {
-          gap: "4rem", 
-        },
-        "@media (min-width: 401px) and (max-width: 500px)": {
-          gap: "6rem", 
-        },
-        "@media (min-width: 501px) and (max-width: 1000px)": {
-          gap: "27rem",
-        },
+  "@media (max-width: 350px)": {
+    //Em alguns telefones, o menu ficava ou muito distante (ficando para fora da tela)
+    gap: "2rem", //ou muito próximo da logo, então, criei alguns medias querys para controlar melhor
+  }, //esse espaçamento para dispositivos menores.
+  "@media (min-width: 351px) and (max-width: 400px)": {
+    gap: "4rem",
+  },
+  "@media (min-width: 401px) and (max-width: 500px)": {
+    gap: "6rem",
+  },
+  "@media (min-width: 501px) and (max-width: 1000px)": {
+    gap: "27rem",
+  },
 };
 
 export const linkStyle = {
-  display: "flex", 
-  alignItems: "center", 
-  textDecoration: "none", 
+  display: "flex",
+  alignItems: "center",
+  textDecoration: "none",
   padding: "0.5rem 1rem",
   borderRadius: "8px",
   color: "#000000",
   transition: "all 0.3s ease",
   "&:hover": {
     backgroundColor: "rgba(0, 0, 0, 0.04)",
-    transform: "scale(1.05)"
-  }
+    transform: "scale(1.05)",
+  },
 };
 
 export const container_main = {
@@ -74,7 +77,7 @@ export const container_main = {
   flexDirection: "column",
   textAlign: "left",
   "@media (max-width: 1024px)": {
-    padding: 0
+    padding: 0,
   },
 };
 
@@ -88,7 +91,7 @@ export const main_content = {
   alignItems: "center",
   justifyContent: "center",
   padding: "1rem",
-  "@media (max-width: 1024px)" : {
+  "@media (max-width: 1024px)": {
     width: "100%",
     padding: "1rem",
   },
@@ -115,23 +118,21 @@ export const imageStyle = {
   },
 };
 
-
 export const main_content_text_h2 = {
   textAlign: "justify",
   padding: "0 0.5rem",
   fontSize: "2.5rem",
   "@media (max-width: 768px)": {
-    textAlign: "left",       
-    overflowWrap: "break-word", 
-    wordSpacing: "normal"    
+    textAlign: "left",
+    overflowWrap: "break-word",
+    wordSpacing: "normal",
   },
 };
 
-
 export const main_content_text_p = {
   fontSize: "1.15rem",
-  lineHeight: "1.8rem", 
-  textAlign: "justify", 
+  lineHeight: "1.8rem",
+  textAlign: "justify",
   marginTop: "3vh",
   marginBottom: "3vh",
   padding: "0 0.5rem",
@@ -146,7 +147,7 @@ export const main_content_text_p = {
 export const main_content_text_p_2 = {
   fontSize: "1.15rem",
   lineHeight: "1.8rem",
-  textAlign: "justify", 
+  textAlign: "justify",
   marginTop: "1vh",
   padding: "0 0.5rem",
   "@media (max-width: 1024px)": {
@@ -159,9 +160,9 @@ export const main_content_text_p_2 = {
 
 export const main_content_benefits_list = {
   marginBottom: "3vh",
-}
+};
 
-export const slider_container =  {
+export const slider_container = {
   width: "100%",
   maxWidth: "700px",
   margin: "1rem auto",
@@ -171,12 +172,12 @@ export const slider_container =  {
     padding: "0",
     margin: "1rem 0",
   },
-}
+};
 
 export const slide_image = {
-  cursor: 'pointer', 
-  width: '100%'
-}
+  cursor: "pointer",
+  width: "100%",
+};
 
 export const overlay_text = {
   position: "absolute",
@@ -191,7 +192,7 @@ export const overlay_text = {
   justifyContent: "center",
   borderBottomLeftRadius: "8px",
   borderBottomRightRadius: "8px",
-}
+};
 
 export const whatsapp_button = {
   position: "fixed",
@@ -209,7 +210,6 @@ export const whatsapp_button = {
     transform: "scale(1.1)",
   },
 };
-
 
 //Configuração da animação do botão do WhatsApp
 export const pulseBounceKeyframes = `
@@ -230,20 +230,19 @@ export const pulseBounceKeyframes = `
 `;
 
 export const footer = {
-  marginTop: "7vh",
   marginBottom: "0",
   height: "7vh",
   fontFamily: "Arial, Helvetica, sans-serif",
   textAlign: "center",
-  boxShadow: "0 6px 10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1)", 
+  boxShadow: "0 6px 10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1)",
   backgroundColor: "orange",
 };
 
 export const footer_p = {
-  fontSize: "0.75rem"
-}
+  fontSize: "0.75rem",
+};
 
 export const footer_link = {
-    alignItems: "center", 
-    fontSize: "1rem",
-  }
+  alignItems: "center",
+  fontSize: "1rem",
+};
