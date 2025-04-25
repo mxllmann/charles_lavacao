@@ -1,6 +1,6 @@
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Head from 'next/head';
-import { body,  globalStylesDefinition} from "./_style/style"
+import { globalStylesDefinition, content} from "./_style/style"
 import Header from "./_components/Header";
 import WhatsAppButton from "./_components/WhatsAppButton";
 import Footer from "./_components/Footer";

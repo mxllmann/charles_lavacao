@@ -1,5 +1,7 @@
 //CSS-in-JS, cada componente estilizado é um objeto
 
+import { BorderColor, BorderStyle } from "@mui/icons-material";
+
 export const globalStylesDefinition = {
   '*': {
     boxSizing: 'border-box',
@@ -7,14 +9,14 @@ export const globalStylesDefinition = {
     margin: 0,
   },
   html: {
-    backgroundColor: "orange", // COR VÁLIDA — importante
+    backgroundColor: "orange", 
     height: "100%",
     overflow: "visible", 
   },
   body: {
-    backgroundColor: "#4dcee8", // fundo azul
-    minHeight: "100vh",         // não deve exceder 100vh
-    height: "auto",             // deixa espaço extra para o scroll passar do conteúdo
+    backgroundColor: "#4dcee8", 
+    minHeight: "100vh",         
+    height: "auto",             
     color: "#171717",
     fontFamily: "Arial, Helvetica, sans-serif",
     scrollBehavior: "smooth",
@@ -23,9 +25,6 @@ export const globalStylesDefinition = {
     MozOsxFontSmoothing: "grayscale",
   }
 };
-
-
-
 
 export const header = {
   backgroundColor: "#fdfdfd",
@@ -230,12 +229,9 @@ export const pulseBounceKeyframes = `
 }
 `;
 
-export const footer_container = {
-  width: "100%" 
-}
-
 export const footer = {
   marginTop: "7vh",
+  marginBottom: "0",
   height: "7vh",
   fontFamily: "Arial, Helvetica, sans-serif",
   textAlign: "center",
