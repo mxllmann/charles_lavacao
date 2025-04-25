@@ -1,6 +1,5 @@
 //CSS-in-JS, cada componente estilizado é um objeto
 
-
 export const globalStylesDefinition = {
   '*': {
     boxSizing: 'border-box',
@@ -8,19 +7,25 @@ export const globalStylesDefinition = {
     margin: 0,
   },
   html: {
-    backgroundColor: "orange", // cor de fundo ao puxar além do limite
-  }}
+    backgroundColor: "orange", // COR VÁLIDA — importante
+    height: "100%",
+    overflow: "visible", 
+  },
+  body: {
+    backgroundColor: "#4dcee8", // fundo azul
+    minHeight: "100vh",         // não deve exceder 100vh
+    height: "auto",             // deixa espaço extra para o scroll passar do conteúdo
+    color: "#171717",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    scrollBehavior: "smooth",
+    overflowX: "hidden",
+    WebkitFontSmoothing: "antialiased",
+    MozOsxFontSmoothing: "grayscale",
+  }
+};
 
-export const body = {
-  color: " #171717", 
-  background: "#4dcee8",
-  maxWidth: "100vw",
-  overflowX: "hidden",
-  scrollBehavior: "smooth",
-  fontFamily: "Arial, Helvetica, sans-serif",
-  WebkitFontSmoothing: "antialiased", /*Usados para suavizar a renderização de fontes */
-  MozOsxFontSmoothing: "grayscale"
-}
+
+
 
 export const header = {
   backgroundColor: "#fdfdfd",
@@ -224,6 +229,10 @@ export const pulseBounceKeyframes = `
   }
 }
 `;
+
+export const footer_container = {
+  width: "100%" 
+}
 
 export const footer = {
   marginTop: "7vh",

@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     </Head>
       <GlobalStyles styles={globalStylesDefinition} /> 
       {/* Componente do Material UI para que eu possa aplicar estilos globais */}
-      <body style={body}>
+      <body>
         <Header />
         {children}
         <WhatsAppButton />
