@@ -6,6 +6,9 @@ export const globalStylesDefinition = {
     boxSizing: 'border-box',
     padding: 0,
     margin: 0,
+  },
+  html: {
+    backgroundColor: "orange", // cor de fundo ao puxar além do limite
   }}
 
 export const body = {
